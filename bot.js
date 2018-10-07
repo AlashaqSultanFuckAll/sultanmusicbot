@@ -331,16 +331,10 @@ client.on('message', message => {
 message.member.voiceChannel.join();
 }
 });
-client.on('message', function(message) {
-	const myID = "346045919072092161";
-	    let args = message.content.split(" ").slice(1).join(" ");
-	    if(message.content.startsWith(prefix + "listen")) {
-				        if(message.author.id !== myID) return;
-            if(!args) return message.reply('Soon 3K Members.');
-        client.user.setActivity(args, {type:'LISTENING'});
-        message.channel.send(':white_check_mark: Done!').then(msg => {
-           msg.delete(5000);
-          message.delete(5000);
-        });
+
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+    client.user.setGame(`SoOoOoON 3K Members !`,`www.twitch.tv/AhmedAlashaq`);
+  });
 
 client.login(process.env.BOT_TOKEN);
