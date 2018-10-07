@@ -262,7 +262,6 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
         ***__أوامر الموسيفة__***
 **
 ${prefix}play - لتشغيل أغنية برآبط أو بأسم
-${prefix}come - حتى تثبت البوت بروم
 ${prefix}skip - لتجآوز الأغنية الحآلية
 ${prefix}pause - إيقآف الأغنية مؤقتا
 ${prefix}resume - لموآصلة الإغنية بعد إيقآفهآ مؤقتا
