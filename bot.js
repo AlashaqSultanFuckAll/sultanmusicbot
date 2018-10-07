@@ -332,13 +332,7 @@ message.member.voiceChannel.join();
 }
 });
 
-
-    if (message.content.startsWith(prefix + 'streem')) {
-    if (message.author.id !== '286088294234718209') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-    client.user.setGame(argresult, "http://twitch.tv/AhmedAlashaq");
-        message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
-   }
-});
+bot.user.setActivity(`Soon 3K Member!!`, {type:'STREAMING', url: "https://www.twitch.tv/AhmedAlashaq"});
 
  
 
