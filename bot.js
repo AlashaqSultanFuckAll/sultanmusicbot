@@ -333,7 +333,6 @@ message.member.voiceChannel.join();
 });
 
 bot.user.setActivity(`Soon 3K Member!!`, {type:'STREAMING', url: "https://www.twitch.tv/AhmedAlashaq"});
-}
 });
 
 
