@@ -332,9 +332,4 @@ message.member.voiceChannel.join();
 }
 });
 
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag} !`);
-    client.user.setGame(`SoOoOoON 3K Members !`,`www.twitch.tv/AhmedAlashaq`);
-  });
-
 client.login(process.env.BOT_TOKEN);
